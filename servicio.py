@@ -11,9 +11,6 @@ class Servicio:
     def __init__(self, municipio, gravedad = None):
         self.municipio = municipio
         self.gravedad = gravedad # esto es para el apartado B del ejercicio
-   
-    def getGravedad(self):
-        return self.gravedad
     
     def getMunicipio(self):
         return self.municipio
