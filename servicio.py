@@ -12,6 +12,9 @@ class Servicio:
         self.municipio = municipio
         self.gravedad = gravedad # esto es para el apartado B del ejercicio
     
+    def setGravedad(self, gravedad):
+        self.gravedad = gravedad
+
     def getMunicipio(self):
         return self.municipio
 
