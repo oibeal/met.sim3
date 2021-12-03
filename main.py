@@ -72,9 +72,16 @@ def simular(ejercicio):
 
         estado = estado_siguiente(estado)
 
-    print("Tiempo total de ejecución: ",t," minutos")
-    print("Tiempo empleado en desplazamientos: ",tiempo_desplazamientos)
-    print("Número medio de servicios al mes: ",servicios_totales)
-    print("Tiempo medio aranjuez - ocaña: ",sum(tiempos_aranjuez_ocaña)/len(tiempos_aranjuez_ocaña))
+    if VERBOSE == 1:
+        print("Tiempo total de ejecución: ",t," minutos")
+        print("Tiempo empleado en desplazamientos: ",tiempo_desplazamientos)
+        print("Número medio de servicios al mes: ",servicios_totales)
+        print("Tiempo medio aranjuez - ocaña: ",sum(tiempos_aranjuez_ocaña)/len(tiempos_aranjuez_ocaña))
+    else:
+        print(round(t,2),
+                round(tiempo_desplazamientos,2),
+                round(servicios_totales,2),
+                round(sum(tiempos_aranjuez_ocaña)/len(tiempos_aranjuez_ocaña))
+                )
 
-simular("B")
+simular("A")
